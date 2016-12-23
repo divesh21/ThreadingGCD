@@ -10,6 +10,17 @@
 
 @interface ViewController : UIViewController
 
+- (IBAction)download:(id)sender;
+
+
+@property (weak, nonatomic) IBOutlet UIActivityIndicatorView *indicator;
+
+
+@property (weak, nonatomic) IBOutlet UIImageView *imageView;
+
+
+
+@property(nonatomic,retain) dispatch_queue_t queue;
 
 @end
 
